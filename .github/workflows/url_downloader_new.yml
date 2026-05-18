@@ -70,7 +70,8 @@ jobs:
           mkdir -p downloads
           mv temp_dl/* downloads/
 
-          git add downloads/
+          git add -f downloads/
+          
           git commit -m "Uploaded split video parts [skip ci]" || echo "No changes"
 
           git push
